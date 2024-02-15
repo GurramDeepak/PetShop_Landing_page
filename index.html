@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #fff;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #3b5998 4px solid; /* Facebook blue color */
+        }
+
+        header a {
+            color: #333;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+            position: relative;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header .highlight,
+        header .current a {
+            color: #3b5998; /* Facebook blue color */
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #3b5998; /* Facebook blue color */
+            font-weight: bold;
+        }
+
+        header #branding h1 span {
+            color: #3b5998; /* Facebook blue color */
+        }
+
+        header a#cta {
+            float: right;
+            display: inline;
+            background: #3b5998; /* Facebook blue color */
+            padding: 10px 20px 10px 20px;
+            color: #fff;
+            font-size: 16px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-transition: background 0.3s ease-in;
+            -moz-transition: background 0.3s ease-in;
+            transition: background-color 0.3s ease-in;
+        }
+
+        header a#cta:hover {
+            background: #1d2d4a; /* Darker blue color */
+        }
+
+        #main {
+            padding: 40px 0;
+        }
+
+        #main h1 {
+            color: #3b5998; /* Facebook blue color */
+        }
+
+        #main p {
+            font-size: 18px;
+            line-height: 1.6em;
+            color: #666;
+        }
+
+        #products {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .product {
+            margin-bottom: 30px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #3b5998; /* Facebook blue color */
+            border-radius: 5px;
+        }
+
+        footer {
+            padding: 20px 0;
+            background: #3b5998; /* Facebook blue color */
+            color: #fff;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                padding-top: 20px;
+                min-height: 50px;
+            }
+
+            header #branding,
+            header nav,
+            header ul,
+            header li {
+                float: none;
+                display: block;
+            }
+
+            header #branding h1 {
+                text-align: center;
+                margin: 0;
+            }
+
+            header nav {
+                text-align: center;
+            }
+
+            header a#cta {
+                float: none;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            #main {
+                padding: 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Pet</span> Shop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" id="cta">Shop Now</a>
+        </div>
+    </header>
+
+    <div id="main" class="container">
+        <h1>Welcome to Our Pet Shop</h1>
+        <p>Find the best products for your furry friends!</p>
+
+        <div id="products">
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/172254814/photo/waiting.jpg?s=612x612&w=0&k=20&c=g2cMOyBpRq-Pkf7NTs2EjjcwBMTKyohJZB9wX09nuI4=" alt="Dog Food">
+                <h3>Dog Food</h3>
+                <p>Healthy and delicious food for your dogs.</p>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/34d57ceb-f7ef-4a64-84ab-a02933a74b28.__CR0,0,300,300_PT0_SX300_V1___.png" alt="Cat Toys">
+                <h3>Cat Toys</h3>
+                <p>Keep your cats entertained with our selection of toys.</p>
+            </div>
+            <!-- Add more product items as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pet Shop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
